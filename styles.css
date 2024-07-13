@@ -1,0 +1,73 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #f90;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #e80;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+#features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#features .feature img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background: #f0f0f0;
+    border-left: 5px solid #f90;
+}
+
+#testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
