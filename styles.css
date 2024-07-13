@@ -1,13 +1,14 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -36,38 +37,90 @@ header p {
     background: #e80;
 }
 
-section {
-    padding: 50px 20px;
+nav {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-#features .feature {
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 80px 20px;
+    margin-top: 60px; /* Adjust for fixed nav */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feature {
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.feature img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.testimonial {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
 
-#features .feature img {
-    max-width: 150px;
-    margin-right: 20px;
-}
-
-#testimonials blockquote {
+.testimonial blockquote {
+    margin: 0;
     font-style: italic;
-    margin: 20px 0;
-    padding: 10px 20px;
-    background: #f0f0f0;
-    border-left: 5px solid #f90;
 }
 
-#testimonials cite {
+.testimonial cite {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    text-align: right;
+}
+
+.faq-item {
+    margin-bottom: 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
