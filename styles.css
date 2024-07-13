@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #333;
     line-height: 1.6;
+    background: #f4f4f4;
 }
 
 header {
@@ -31,6 +32,7 @@ header p {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .cta-button:hover {
@@ -63,15 +65,21 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
+    color: #f90;
     text-decoration: underline;
 }
 
 .section {
     padding: 80px 20px;
     margin-top: 60px; /* Adjust for fixed nav */
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -80,23 +88,21 @@ nav ul li a:hover {
     padding: 0 20px;
 }
 
-.feature {
+.feature, .testimonial {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.feature img {
+.feature img, .testimonial img {
     max-width: 200px;
     margin-right: 20px;
     border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-.testimonial {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.feature img:hover, .testimonial img:hover {
+    transform: scale(1.05);
 }
 
 .testimonial blockquote {
@@ -120,7 +126,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: 20px;
 }
